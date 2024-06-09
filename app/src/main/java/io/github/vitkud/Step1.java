@@ -1,3 +1,5 @@
+package io.github.vitkud;
+
 import java.util.Random;
 
 public class Step1 {
@@ -66,8 +68,8 @@ public class Step1 {
     static void place_ship_rnd(int[][] field, int width, int height) {          // Генерация координаты случайного размещения корабля на поле
         Random random = new Random();
         while (true) {
-            int x1 = random.nextInt(10 - width);
-            int y1 = random.nextInt(10 - height);
+            int x1 = random.nextInt(10 - width + 1);
+            int y1 = random.nextInt(10 - height + 1);
             boolean is_placed = place_ship(field, width, height, x1, y1);    // вызов процедуры размещения корабля
             if (is_placed)                            // Если результат вызова процедуры True, то разрываем бесконечный цикл.
                 break;                                // TODO А если не смогли разместить, то что???
