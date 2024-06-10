@@ -34,3 +34,7 @@ application {
     // Define the main class for the application.
     mainClass = 'io.github.vitkud.Step1'
 }
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
