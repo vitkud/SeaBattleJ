@@ -3,8 +3,14 @@ hs_err_pid*
 replay_pid*
 
 # idea
-/.idea
-/out
+.idea
+out
+
+# eclipse
+.settings
+bin
+.classpath
+.project
 
 # Ignore Gradle project-specific cache directory
 .gradle
